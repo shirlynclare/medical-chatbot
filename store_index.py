@@ -10,7 +10,7 @@ PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
 PINECONE_API_ENV=os.environ.get('PINECONE_API_ENV')
 #print(PINECONE_API_KEY)
 #print(PINECONE_API_ENV)
-extracted_data=load_pdf("Data/")
+extracted_data=load_data("data/")
 text_chunks=text_split(extracted_data)
 embedding=download_huggingfaceembedding()
 #Initializing the Pinecone
