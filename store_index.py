@@ -1,4 +1,4 @@
-from src.helper import load_pdf,text_split,download_huggingfaceembedding
+from src.helper import load_data,text_split,download_huggingfaceembedding
 from langchain.vectorstores import Pinecone
 import pinecone
 from dotenv import load_dotenv
