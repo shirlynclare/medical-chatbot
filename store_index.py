@@ -17,7 +17,7 @@ embedding=download_huggingfaceembedding()
 pinecone.init(api_key=PINECONE_API_KEY,
               environment=PINECONE_API_ENV)
 
-index_name="medical-chatbot"
+index_name="clare"
 
 #Creating Embeddings for Each of The Text Chunks & storing
 docsearch=Pinecone.from_texts([t.page_content for t in text_chunks], embedding, index_name=index_name)
